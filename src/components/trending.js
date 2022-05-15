@@ -23,7 +23,7 @@ const Trending = (props) => {
           (props.type === "movie" ? movieData.list : tvData.list).map((media) => (
             <>
               <Wrap key={media.id}>
-                <Link to={`/detail/${props.type}/${media.id}`} >
+                <Link to={`/react-movie-app/detail/${props.type}/${media.id}`} >
                   <Image bgUrl = {IMAGE_PATH + media.backdrop_path} />
                   <ImgCard >
                     <Title>

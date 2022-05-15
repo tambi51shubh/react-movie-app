@@ -7,6 +7,11 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 import { useFetchDetail } from "../hooks";
 
+import Play_Icon from "../assets/play-icon-black.png"
+import Back_Icon from "../assets/back.png"
+import A_Icon from "../assets/a-icon.png"
+import U_Icon from "../assets/u-icon.png"
+
 
 const Detail = () => {
   window.scroll(0, 0);
@@ -38,18 +43,18 @@ const Detail = () => {
           <Controls>
             <a href={media.homepage} target="_blank"  rel="noreferrer">
               <Player>
-                <img src="/images/play-icon-black.png" alt="" />
+                <img src={Play_Icon} alt="" />
                 <span>{`Watch ${mediaType === "movie" ? "Movie" : "TV Series" }`}</span>
               </Player>
             </a>
-            <Link to={mediaType === "movie" ? "/movie" : "/tv"}>
+            <Link to={mediaType === "movie" ? "/react-movie-app/movie" : "/react-movie-app/tv"}>
               <Back>
-                <img src="/images//back.png" alt="" />
+                <img src={Back_Icon} alt="" />
                 <span>Back</span>
               </Back>
             </Link>
               <Info>
-                {media.adult  ? <img src="/images/a-icon.png" alt="A-certified"/> : <img src="/images/u-icon.png" alt="U-certified"/>}
+                {media.adult  ? <img src={A_Icon} alt="A-certified"/> : <img src={U_Icon} alt="U-certified"/>}
               </Info>
               <Info>
                 <h3>{(media.release_date && media.release_date.slice(0, 4)) || ( media.first_air_date && media.first_air_date.slice(0, 4))}</h3>

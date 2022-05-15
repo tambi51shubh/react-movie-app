@@ -10,7 +10,7 @@ const Home = (props) => {
         <Tagline>An Ultimate Platform To Find Trending Movies</Tagline>
         <CTA>
           <CTALogoOne src="" alt="" />
-          <Link to="/movie" >
+          <Link to="/react-movie-app/movie" >
             <SignUp>Get Started</SignUp>
           </Link>
           <Description>

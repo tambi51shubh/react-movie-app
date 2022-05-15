@@ -5,13 +5,13 @@ import styled from "styled-components";
 const NavBottom = () => {
     return(
         <Container>
-            <Link to="/movie"  >
+            <Link to="/react-movie-app/movie"  >
             <Menu>
                 <img src="/images/movie-icon.png" alt="movies" />
                 <span>Movies</span>
             </Menu>
             </Link>
-            <Link to="/tv"  >
+            <Link to="/react-movie-app/tv"  >
             <Menu>
                 <img src="/images/tv-icon.png" alt="tv series" />
                 <span>TV Series</span>
