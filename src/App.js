@@ -11,10 +11,10 @@ function App() {
     <HeaderBox />
     <div className="App">
       <Routes>
-        <Route path='/home' element = {<Home />} />
-        <Route path='/movie' element = {<Trending type = {"movie"} title = {"Movies"}  />} /> 
-        <Route path='/tv' element = {<Trending type = {"tv"} title = {"TV Series"} />} /> 
-        <Route path='/detail/:mediaType/:mediaId' element = {<Detail />} /> 
+        <Route path='/react-movie-app' element = {<Home />} />
+        <Route path='/react-movie-app/movie' element = {<Trending type = {"movie"} title = {"Movies"}  />} /> 
+        <Route path='/react-movie-app/tv' element = {<Trending type = {"tv"} title = {"TV Series"} />} /> 
+        <Route path='/react-movie-app/detail/:mediaType/:mediaId' element = {<Detail />} /> 
       </Routes>
     </div>
     </>
