@@ -1,0 +1,56 @@
+
+/* .App {
+  text-align: center;
+}
+
+.dash-header h2{
+  color: whitesmoke;
+}
+.detail-header h2{
+  color: whitesmoke;
+}
+.footer{
+  background: black;
+  border: 3px solid grey;
+  width: 100%;
+  bottom: 30px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+}
+.card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 16vmin);
+  grid-gap: 8vmin 16vmin;
+  padding: 2vmin;
+}
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  color: white;
+  border: 1px solid white;
+  font-size: 100px;
+  cursor: pointer;
+}
+.logo{
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  color: white;
+}
+.logo h1{
+  font-size: 40px;
+  color: white;
+} */
