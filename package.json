@@ -2,7 +2,7 @@
   "name": "single-page-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tambi51shubh.github.io/",
+  "homepage": "https://tambi51shubh.github.io/home",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.2",

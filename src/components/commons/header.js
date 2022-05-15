@@ -10,7 +10,7 @@ const HeaderBox = () => {
             </Logo>
             <Website> CINEPOLLS </Website>
             <NavMenu>
-              <Link to="/">
+              <Link to="/home">
             <a>
               <img src="/images/home-icon.svg" />
               <span>HOME</span>
