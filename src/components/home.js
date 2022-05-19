@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import HeaderBox from "./commons/header";
+import HeaderBox from "./header";
+import Home_Background from "../assets/home-background.jpg";
 
 const Home = (props) => {
   return (
@@ -9,7 +10,6 @@ const Home = (props) => {
       <Content>
         <Tagline>An Ultimate Platform To Find Trending Movies</Tagline>
         <CTA>
-          <CTALogoOne src="" alt="" />
           <Link to="/react-movie-app/movie" >
             <SignUp>Get Started</SignUp>
           </Link>
@@ -17,9 +17,10 @@ const Home = (props) => {
             Get Premier Access to our website for an additional fee
             alongwith a Disney+ subscription. As of 03/26/21, the price of our subscription will increase by $1 to provide help to the Pandemic affected families.
           </Description>
-          <CTALogoTwo src="/images/cta-logo-two.png" alt="" />
         </CTA>
-        <BgImage />
+        <BgImage>
+          <img src={Home_Background} alt="Home_Backgroound"/>
+        </BgImage>
       </Content>
     </Container>
   );
@@ -55,16 +56,17 @@ const Tagline = styled.div`
 `;
 
 const BgImage = styled.div`
-  height: 100%;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(180deg, rgba(15,0,0,0.7), rgba(35,0,0,0.7)), url("/images/home-background.jpg");
+  background: linear-gradient(180deg, rgba(15,0,0,0.7), rgba(35,0,0,0.7));
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: -1;
+  img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
 `;
 
 const CTA = styled.div`
@@ -74,13 +76,6 @@ const CTA = styled.div`
   flex-direction: column;
 `;
 
-const CTALogoOne = styled.img`
-  margin-bottom: 12px;
-  max-width: 600px;
-  min-height: 1px;
-  display: block;
-  width: 100%;
-`;
 
 const SignUp = styled.a`
   font-weight: bold;
@@ -104,14 +99,6 @@ const Description = styled.p`
   margin: 25px 0 24px;
   line-height: 1.5;
   letter-spacing: 1.5px;
-`;
-
-const CTALogoTwo = styled.img`
-  max-width: 600px;
-  margin-bottom: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-  width: 100%;
 `;
 
 export default Home;

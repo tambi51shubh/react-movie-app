@@ -2,22 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import Logo_Company from "../assets/logo.svg";
+import Home_Icon from "../assets/home-icon.svg";
+import Search_Icon from "../assets/search-icon.svg"
+
 const HeaderBox = () => {
     return (
         <Nav>
             <Logo>
-            <img src="/images/logo.svg" />
+            <img src={Logo_Company} alt="Logo"/>
             </Logo>
             <Website> CINEPOLLS </Website>
             <NavMenu>
               <Link to="/react-movie-app">
             <a>
-              <img src="/images/home-icon.svg" />
+              <img src={Home_Icon} alt="Home Icon"/>
               <span>HOME</span>
             </a>
               </Link>
             <a>
-              <img src="/images/search-icon.svg"/>
+              <img src={Search_Icon} alt="Search Icon"/>
               <span>SEARCH</span>
             </a>
             

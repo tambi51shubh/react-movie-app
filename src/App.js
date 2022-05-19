@@ -2,7 +2,7 @@ import './App.css';
 import React from "react";
 import { Routes, Route} from "react-router-dom";
 import {Home, Detail, Trending} from "./components";
-import HeaderBox from './components/commons/header';
+import HeaderBox from './components/header';
 
 function App() {
 
